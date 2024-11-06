@@ -4,6 +4,7 @@
 import React, { useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import anime from 'animejs';
+import Link from 'next/link';
 
 const LandingPage = () => {
   const heroTextRef = useRef(null);
@@ -115,7 +116,7 @@ const LandingPage = () => {
       <section ref={ctaRef} className="py-5 bg-primary text-white text-center" id="contact">
         <h2>Ready to Book a Session?</h2>
         <p>Contact us to schedule your next photography session and capture beautiful memories.</p>
-        <a href="#contact" className="btn btn-light mt-3">Contact Us</a>
+        <Link href="/contact-us" className="btn btn-light mt-3">Contact Us</Link>
       </section>
     </div>
   );
