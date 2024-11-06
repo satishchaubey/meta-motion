@@ -3,6 +3,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import anime from 'animejs';
+import Image from 'next/image';
 
 const ServicesTwo = () => {
   const serviceRefs = useRef([]);
@@ -60,7 +61,7 @@ const ServicesTwo = () => {
             ref={(el) => (serviceRefs.current[index] = el)}
           >
             <div className="card h-100 shadow-lg">
-              <img src={service.image} className="card-img-top" alt={service.title} />
+              <Image src={service.image} className="card-img-top" alt={service.title} width={200} height={150}/>
               <div className="card-body">
                 <h5 className="card-title">{service.title}</h5>
                 <p className="card-text">{service.description}</p>

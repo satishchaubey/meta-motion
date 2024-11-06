@@ -5,6 +5,8 @@ import React from "react";
 import anime from "animejs";
 import { useEffect } from "react";
 import data from './data.json'
+import Link from "next/link";
+import Image from "next/image";
 
 const ServicesPage = () => {
   function readMore(a, b) {
@@ -31,16 +33,16 @@ const ServicesPage = () => {
     <div className="Card">
       {data.map((item, index) => (
         <div className="box" key={index}>
-          <img src={item.img} alt="" />
+          <Image src={item.img} alt="" width={200} height={150} />
           <h3>{item.title}</h3>
           <p>{item.content}</p>
-          <a
+          <Link
             href={item.link}
             className="btn"
             onClick={() => readMore(item.title, item.content)}
           >
             Read more
-          </a>
+          </Link>
         </div>
       ))}
     </div>

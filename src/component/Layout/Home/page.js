@@ -5,6 +5,7 @@ import React, { useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import anime from 'animejs';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const LandingPage = () => {
   const heroTextRef = useRef(null);
@@ -42,7 +43,7 @@ const LandingPage = () => {
         <div ref={heroTextRef}>
           <h1 className="display-3 font-weight-bold">Capture Your Moments</h1>
           <p className="lead">Professional photography that tells your story</p>
-          <a href="#portfolio" className="btn btn-primary mt-3">View Portfolio</a>
+          <Link href="/" className="btn btn-primary mt-3">View Portfolio</Link>
         </div>
       </section>
 
@@ -82,13 +83,13 @@ const LandingPage = () => {
         <h2 className="text-center mb-5">Portfolio</h2>
         <div className="row">
           <div className="col-md-4 mb-4">
-            <img src="/images/portfolio1.jpg" className="img-fluid rounded" alt="Portfolio 1" />
+            <Image src="/images/portfolio1.jpg" className="img-fluid rounded" alt="Portfolio 1" width={50} height={50}/>
           </div>
           <div className="col-md-4 mb-4">
-            <img src="/images/portfolio2.jpg" className="img-fluid rounded" alt="Portfolio 2" />
+            <Image src="/images/portfolio2.jpg" className="img-fluid rounded" alt="Portfolio 2" width={50} height={50}/>
           </div>
           <div className="col-md-4 mb-4">
-            <img src="/images/portfolio3.jpg" className="img-fluid rounded" alt="Portfolio 3" />
+            <Image src="/images/portfolio3.jpg" className="img-fluid rounded" alt="Portfolio 3" width={50} height={50}/>
           </div>
         </div>
       </section>
@@ -99,13 +100,13 @@ const LandingPage = () => {
         <div className="row">
           <div className="col-md-6">
             <blockquote className="blockquote">
-              <p className="mb-0">"Amazing photography that truly captures the essence of our wedding day."</p>
-              <footer className="blockquote-footer">Sarah & Mike</footer>
+              <p className="mb-0">{`"Amazing photography that truly captures the essence of our wedding day."`}</p>
+              <footer className="blockquote-footer">Sarah Mike</footer>
             </blockquote>
           </div>
           <div className="col-md-6">
             <blockquote className="blockquote">
-              <p className="mb-0">"The portraits are stunning, we couldn't be happier with the results."</p>
+              <p className="mb-0">{`The portraits are stunning, we couldn't be happier with the results`}.</p>
               <footer className="blockquote-footer">Anna & John</footer>
             </blockquote>
           </div>
