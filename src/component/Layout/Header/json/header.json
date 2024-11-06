@@ -9,12 +9,12 @@
         "link": "/services"
       },
       {
-        "text": "Contact",
-        "link": "/contact-us"
-      },
-      {
         "text": "About",
         "link": "/about-us"
+      },
+      {
+        "text": "Contact",
+        "link": "/contact-us"
       }
     ]
   }

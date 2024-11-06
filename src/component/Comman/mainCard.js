@@ -1,6 +1,6 @@
-"use client";
-import RecipeReviewCard from './RecipeReviewCard'
+"use client"
 
+import RecipeReviewCard from "./cards";
 
 const MainCards = () => {
     const recipes = [
@@ -88,19 +88,13 @@ const MainCards = () => {
       }
     ];
   
-    console.log(recipes,"recipes")
-  
     return (
-      <div>
+      <div className="d-flex justify-around gap-4 m-2 p-5">
         {recipes.map((recipe, index) => (
           <RecipeReviewCard key={index} {...recipe} />
         ))}
       </div>
     );
   };
-  "use client";
-
-
-
-  export default MainCards;
   
+  export default MainCards;

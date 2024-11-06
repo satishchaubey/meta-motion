@@ -1,9 +1,10 @@
+import ContactForm from '@/component/Layout/Form/FormData'
 import React from 'react'
 
 const ContactUs = () => {
   return (
     <h1>
-      ContactUs
+      <ContactForm/>
     </h1>
   )
 }
