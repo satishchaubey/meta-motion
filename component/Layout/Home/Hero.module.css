@@ -1,0 +1,48 @@
+.banner-carousel {
+  margin: 0 auto; /* Center the carousel */
+  max-width: 1200px; /* Set a max width for the carousel */
+}
+
+.banner-img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Crop images nicely */
+}
+
+.splide__arrow--next,
+.splide__arrow--prev {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white; /* Arrow color */
+  border-radius: 50%; /* Round buttons */
+  width: 40px; /* Button width */
+  height: 40px; /* Button height */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center the icon */
+  align-items: center; /* Center the icon */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.splide__arrow--next:hover,
+.splide__arrow--prev:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+.items {
+  display: flex; /* Use flexbox for centering images */
+  justify-content: center; /* Center the images */
+  align-items: center; /* Center vertically */
+}
+
+@media (max-width: 600px) {
+  /* Additional styles for mobile view */
+  .banner-carousel {
+    padding: 10px; /* Add padding for mobile */
+  }
+}
+
+@media (min-width: 601px) {
+  /* Additional styles for desktop view */
+  .banner-carousel {
+    padding: 20px; /* Add padding for desktop */
+  }
+}
