@@ -223,6 +223,8 @@
 @media screen and (max-width: 700px) {
   .navMenuList {
     margin-left: 0px !important;
+    background-color: rgba(55, 53, 53, 0.5);
+    flex-direction: column;
   }
   .compaignLogo{
     max-width: 30px !important;
